@@ -130,6 +130,11 @@ footer{border-top:1px solid var(--linea); margin-top:60px; padding:30px 0 50px; 
 .final-box .sub{font-size:.88rem; color:var(--tenue)}
 .signline{margin:12px 0; background:#0d1116; border:1px solid var(--linea); border-radius:10px; padding:8px}
 .signline svg{width:100%; height:auto; display:block}
+.ok-inline{color:var(--eje); font-weight:bold; margin-left:4px}
+.tabla-wrap{overflow-x:auto; margin:10px 0}
+table.datos{font-size:.86rem; white-space:nowrap; min-width:100%}
+table.datos th,table.datos td{padding:5px 9px; text-align:center}
+table.datos tr td:first-child,table.datos tr th:first-child{position:sticky; left:0; background:var(--papel2); text-align:left}
 @media (prefers-reduced-motion: reduce){ *{animation:none!important; transition:none!important} }
 </style>
 </head>
@@ -152,6 +157,7 @@ footer{border-top:1px solid var(--linea); margin-top:60px; padding:30px 0 50px; 
     <a href="#pdf">4 · Guía (PDF)</a>
     <a href="#teoricas">5 · Teóricas</a>
     <a href="#practicas">6 · Prácticas resueltas</a>
+    <a href="#grafico">7 · Análisis gráfico</a>
   </div>
 </nav>
 
@@ -455,11 +461,11 @@ footer{border-top:1px solid var(--linea); margin-top:60px; padding:30px 0 50px; 
           </div>
         </div>
         <div class="paso"><span class="p-tag">p2 · Sistema de referencia</span>
-          <p>Plano cartesiano con origen en \(A\): eje \(+x\) hacia el Este, eje \(+y\) hacia el Norte. Así, "30° ES" es un ángulo de \(-30°\) respecto de \(+x\), y "20° OS" apunta al tercer cuadrante.</p>
+          <p>Plano cartesiano con origen en \(A\): eje \(+x\) hacia el Este, eje \(+y\) hacia el Norte. Así, "30° ES" es un ángulo de \(-30^\circ\) respecto de \(+x\), y "20° OS" apunta al tercer cuadrante.</p>
         </div>
         <div class="paso"><span class="p-tag">p3 · Descomposición vectorial</span>
-          <p>$$\vec d_1 = (45{,}7\cos 30°,\; -45{,}7\sin 30°) = (39{,}58,\; -22{,}85)\ \text{m}$$
-          $$\vec d_2 = (-30\cos 20°,\; -30\sin 20°) = (-28{,}19,\; -10{,}26)\ \text{m}$$
+          <p>$$\vec d_1 = (45{,}7\cos 30^\circ,\; -45{,}7\sin 30^\circ) = (39{,}58,\; -22{,}85)\ \text{m}$$
+          $$\vec d_2 = (-30\cos 20^\circ,\; -30\sin 20^\circ) = (-28{,}19,\; -10{,}26)\ \text{m}$$
           Posiciones: \(B = (39{,}58, -22{,}85)\); \(C = B + \vec d_2 = (11{,}39,\, -33{,}11)\) m; y el punto medio \(M = B/2 = (19{,}79,\, -11{,}43)\) m.</p>
         </div>
         <div class="paso p4"><span class="p-tag">p4 · Ecuaciones y desarrollo</span>
@@ -484,9 +490,9 @@ footer{border-top:1px solid var(--linea); margin-top:60px; padding:30px 0 50px; 
           <p>Origen en \(O\); \(+x\) = Este, \(+y\) = Norte. "20,8° NO" = desde el Norte, 20,8° hacia el Oeste; "25,4° OS" = desde el Oeste, 25,4° hacia el Sur; "30° ES" = desde el Este, 30° hacia el Sur.</p>
         </div>
         <div class="paso"><span class="p-tag">p3 · Vectores posición</span>
-          <p>$$R = (-180\sin 20{,}8°,\; 180\cos 20{,}8°) = (-63{,}92,\; 168{,}27)\ \text{m}$$
-          $$J = (-245\cos 25{,}4°,\; -245\sin 25{,}4°) = (-221{,}32,\; -105{,}09)\ \text{m}$$
-          $$E = (110\cos 30°,\; -110\sin 30°) = (95{,}26,\; -55{,}00)\ \text{m}$$</p>
+          <p>$$R = (-180\sin 20{,}8^\circ,\; 180\cos 20{,}8^\circ) = (-63{,}92,\; 168{,}27)\ \text{m}$$
+          $$J = (-245\cos 25{,}4^\circ,\; -245\sin 25{,}4^\circ) = (-221{,}32,\; -105{,}09)\ \text{m}$$
+          $$E = (110\cos 30^\circ,\; -110\sin 30^\circ) = (95{,}26,\; -55{,}00)\ \text{m}$$</p>
         </div>
         <div class="paso p4"><span class="p-tag">p4 · Ecuaciones y desarrollo</span>
           <p>Tramos (restas de posiciones, porque cada tramo es recto):
@@ -510,8 +516,8 @@ footer{border-top:1px solid var(--linea); margin-top:60px; padding:30px 0 50px; 
           <p>Origen en \(A\), \(+x\) = Este, \(+y\) = Norte. "30° ON": desde el Oeste, 30° hacia el Norte. "25° NE": desde el Norte, 25° hacia el Este.</p>
         </div>
         <div class="paso"><span class="p-tag">p3 · Vectores</span>
-          <p>$$\vec d_1 = (-35\cos 30°,\; 35\sin 30°) = (-30{,}31,\; 17{,}50)\ \text{km}$$
-          $$\vec d_2 = (40{,}8\sin 25°,\; 40{,}8\cos 25°) = (17{,}24,\; 36{,}98)\ \text{km}$$
+          <p>$$\vec d_1 = (-35\cos 30^\circ,\; 35\sin 30^\circ) = (-30{,}31,\; 17{,}50)\ \text{km}$$
+          $$\vec d_2 = (40{,}8\sin 25^\circ,\; 40{,}8\cos 25^\circ) = (17{,}24,\; 36{,}98)\ \text{km}$$
           $$C = \vec d_1 + \vec d_2 = (-13{,}07,\; 54{,}48)\ \text{km}$$</p>
         </div>
         <div class="paso p4"><span class="p-tag">p4 · Ecuaciones y desarrollo</span>
@@ -2303,15 +2309,933 @@ footer{border-top:1px solid var(--linea); margin-top:60px; padding:30px 0 50px; 
           $$18^2 - 14^2 = 2a(100) \;\Rightarrow\; 324 - 196 = 200a \;\Rightarrow\; a = 0{,}64\ \text{m/s}^2$$
           Distancia de Bárbara a Camila:
           $$d = \frac{14^2}{2(0{,}64)} = \frac{196}{1{,}28} = 153{,}13\ \text{m}$$
-          $$\text{Ayleen–Camila} = d + 100 = 253{,}13\ \text{m}$$
+          $$\text{Ayleen-Camila} = d + 100 = 253{,}13\ \text{m}$$
           (chequeo: \(2(0{,}64)(253{,}125) = 324 \Rightarrow v = 18\) m/s ✔)</p>
         </div>
         <div class="resultado"><b>Distancia inicial Ayleen–Camila ≈ 253,13 m</b></div>
       </div>
     </details>
 
+  </div>
+</section>
+
+<!-- ==================== 7 · ANÁLISIS GRÁFICO ==================== -->
+<section id="grafico">
+  <div class="wrap">
+    <h2>7 · Análisis gráfico (179–249)</h2>
+    <p class="nota">En esta sección los datos vienen en <b>tablas de posición vs tiempo</b>. El método es siempre el mismo: (1) graficar los puntos, (2) calcular la pendiente \(v = \Delta x/\Delta t\) entre datos consecutivos y agrupar los que dan el mismo valor — cada grupo es un tramo de MRU, y pendiente cero significa reposo —, (3) traducir eso a palabras, y (4) calcular lo pedido. Recuerda: <b>pendiente positiva = avanza</b> hacia +x, <b>negativa = retrocede</b>, <b>horizontal = detenido</b>; y un tramo <b>curvo</b> indicaría MRUA (en esta tanda no aparece ninguno).</p>
+
+    <div class="card">
+      <h3>Las cuatro fórmulas que se usan en todos</h3>
+      <div class="eq">$$v = \frac{\Delta x}{\Delta t} = \frac{x_2 - x_1}{t_2 - t_1} \quad (\text{con signo}) \qquad \mathrm{Rap} = \frac{\text{recorrido}}{\Delta t} \quad (\text{siempre} \ge 0)$$</div>
+      <div class="eq">$$\Delta x = x_{\text{final}} - x_{\text{inicial}} \qquad \text{Recorrido} = \sum_{\text{tramos}} |\Delta x_i|$$</div>
+      <p class="nota">La diferencia clave: el <b>desplazamiento</b> solo mira el inicio y el final (lleva signo); el <b>recorrido</b> suma los valores absolutos tramo a tramo (nunca decrece). Coinciden solo si el móvil nunca cambia de sentido.</p>
+    </div>
+
+    <!-- ===== 179 ===== -->
+    <details class="prob">
+      <summary><span class="num">179</span><span class="enun">La tabla muestra posiciones de un móvil en línea recta horizontal, tomadas con respecto a un punto; a su derecha se considera (+) y a la izquierda (−). Construya el gráfico y elabore un análisis cualitativo del movimiento. Determine cuánto tiempo se movió, cuánta distancia retrocedió, recorrido total, desplazamiento total, velocidad a los 5 s, velocidad a los 15 s, rapidez media total y velocidad media entre 2 y 8 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th></tr><tr><td><b>x (m)</b></td><td>3</td><td>7</td><td>11</td><td>11</td><td>11</td><td>8</td><td>5</td><td>2</td><td>-1</td><td>-4</td><td>-7</td><td>-7</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="205.5" y1="26" x2="205.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="205.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">5</text>
+<line x1="345.1" y1="26" x2="345.1" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="345.1" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="484.6" y1="26" x2="484.6" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="484.6" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">15</text>
+<line x1="624.2" y1="26" x2="624.2" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="624.2" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="66" y1="244.1" x2="680" y2="244.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="248.1" font-size="11" fill="#8fa0af" text-anchor="end">-5</text>
+<line x1="66" y1="184.0" x2="680" y2="184.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="188.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="124.0" x2="680" y2="124.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="128.0" font-size="11" fill="#8fa0af" text-anchor="end">5</text>
+<line x1="66" y1="63.9" x2="680" y2="63.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="67.9" font-size="11" fill="#8fa0af" text-anchor="end">10</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,148.0 121.8,100.0 177.6,51.9 233.5,51.9 289.3,51.9 345.1,88.0 400.9,124.0 456.7,160.0 512.5,196.0 568.4,232.0 624.2,268.1 680.0,268.1" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="148.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="121.8" cy="100.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="177.6" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="233.5" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="289.3" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="345.1" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="400.9" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="456.7" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="512.5" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="568.4" cy="232.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="624.2" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 4 s</td><td>4 s</td><td>+8 m</td><td>\(2\) = 2,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>4 → 8 s</td><td>4 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>8 → 20 s</td><td>12 s</td><td>-18 m</td><td>\(-\tfrac{3}{2}\) = -1,50 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>20 → 22 s</td><td>2 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr></table>
+          <p>En palabras: el móvil <b>parte 3 m a la derecha</b> del punto de referencia y avanza alejándose; a los 4 s <b>se detiene</b> durante 4 s en x = 11 m; a los 8 s <b>invierte el sentido</b> y retrocede con MRU más lento, cruzando el punto de referencia a los ≈ 15,3 s; a los 20 s se detiene definitivamente en x = −7 m.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <div class="eq">$$t_{\text{movimiento}} = \underbrace{4}_{0\to4} + \underbrace{12}_{8\to20} = 16\ \mathrm{s} \qquad (\text{en reposo}: 6\ \mathrm{s})$$</div>
+          <div class="eq">$$\text{retrocedió} = |{-7} - 11| = 18\ \mathrm{m} \qquad \text{avanzó} = |11-3| = 8\ \mathrm{m}$$</div>
+          <div class="eq">$$\text{Recorrido} = 8 + 18 = 26\ \mathrm{m} \qquad \Delta x = x_f - x_0 = -7 - 3 = -10\ \mathrm{m}$$</div>
+          <p>Velocidades puntuales: leo en qué tramo cae cada instante.</p>
+          <div class="eq">$$v(5\ \mathrm{s}) = 0 \quad (\text{tramo en reposo } 4\to8) \qquad v(15\ \mathrm{s}) = -\tfrac32 = -1{,}50\ \mathrm{m/s} \quad (\text{tramo } 8\to20)$$</div>
+          <div class="eq">$$\mathrm{Rap}_m = \frac{26}{22} = \frac{13}{11} \approx 1{,}18\ \mathrm{m/s}$$</div>
+          <p>Velocidad media entre 2 y 8 s, con las posiciones reales \(x(2)=7\) y \(x(8)=11\):</p>
+          <div class="eq">$$v_m(2\to8) = \frac{11-7}{8-2} = \frac{4}{6} = \tfrac23 \approx 0{,}67\ \mathrm{m/s}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">se movió 16 s · retrocedió 18 m · recorrido 26 m · Δx = −10 m</div>
+            <div class="sub">v(5 s) = 0 · v(15 s) = −1,50 m/s · Rap<sub>m</sub> ≈ 1,18 m/s · v<sub>m</sub>(2→8) ≈ 0,67 m/s</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>Recorrido (26) &gt; |Δx| (10) ✔, como debe ser cuando hay cambio de sentido. Y Rap<sub>m</sub> (1,18) &gt; |v<sub>m</sub>| = 10/22 ≈ 0,45 m/s ✔.</p></div>
+          <div class="callout note"><strong>Signos</strong><p>El desplazamiento es <b>negativo</b> aunque el móvil empezó avanzando: terminó a la izquierda de donde partió. La velocidad media total (−0,45 m/s) es negativa por lo mismo, mientras que la rapidez media es siempre positiva.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 180 ===== -->
+    <details class="prob">
+      <summary><span class="num">180</span><span class="enun">La tabla muestra posiciones de un móvil que se desplaza en línea recta horizontalmente, tomada cada 3 s con respecto a un punto de referencia; a la derecha se considera positivo y a la izquierda negativo. Construya el gráfico y elabore un análisis cualitativo del movimiento. Calcule velocidad y rapidez a los 4 s, velocidad y rapidez a los 20 s, velocidad y rapidez final, velocidad media y rapidez media. Con la ecuación de itinerario, determine la posición exacta del móvil a los 5 y a los 10 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>3</th><th>6</th><th>9</th><th>12</th><th>15</th><th>18</th><th>21</th><th>24</th><th>27</th><th>30</th></tr><tr><td><b>x (m)</b></td><td>-10</td><td>-4</td><td>2</td><td>8</td><td>14</td><td>20</td><td>20</td><td>15</td><td>10</td><td>5</td><td>0</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="168.3" y1="26" x2="168.3" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="168.3" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">5</text>
+<line x1="270.7" y1="26" x2="270.7" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="270.7" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="373.0" y1="26" x2="373.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="373.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">15</text>
+<line x1="475.3" y1="26" x2="475.3" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="475.3" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="577.7" y1="26" x2="577.7" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="577.7" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">25</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">30</text>
+<line x1="66" y1="268.1" x2="680" y2="268.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="272.1" font-size="11" fill="#8fa0af" text-anchor="end">-10</text>
+<line x1="66" y1="196.0" x2="680" y2="196.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="200.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="124.0" x2="680" y2="124.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="128.0" font-size="11" fill="#8fa0af" text-anchor="end">10</text>
+<line x1="66" y1="51.9" x2="680" y2="51.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="55.9" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,268.1 127.4,224.8 188.8,181.6 250.2,138.4 311.6,95.2 373.0,51.9 434.4,51.9 495.8,88.0 557.2,124.0 618.6,160.0 680.0,196.0" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="224.8" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="181.6" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="138.4" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="95.2" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="196.0" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 15 s</td><td>15 s</td><td>+30 m</td><td>\(2\) = 2,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>15 → 18 s</td><td>3 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>18 → 30 s</td><td>12 s</td><td>-20 m</td><td>\(-\tfrac{5}{3}\) = -1,67 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr></table>
+          <p>En palabras: parte 10 m a la <b>izquierda</b> del punto de referencia y avanza hacia la derecha con MRU, cruzando el origen a los 5 s; a los 15 s <b>se detiene</b> 3 s en x = 20 m; luego <b>retrocede</b> con MRU más lento hasta volver justo al punto de referencia (x = 0) a los 30 s.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <p><b>Velocidades y rapideces puntuales</b> (la rapidez es el módulo):</p>
+          <div class="eq">$$v(4\ \mathrm{s}) = +2{,}00\ \mathrm{m/s},\ \ |v| = 2{,}00 \qquad v(20\ \mathrm{s}) = -\tfrac53 \approx -1{,}67\ \mathrm{m/s},\ \ |v| \approx 1{,}67$$</div>
+          <div class="eq">$$v_{\text{final}}(30\ \mathrm{s}) = -\tfrac53 \approx -1{,}67\ \mathrm{m/s} \qquad |v_{\text{final}}| \approx 1{,}67\ \mathrm{m/s}$$</div>
+          <p><b>Promedios</b> (recorrido = 30 + 20 = 50 m; \(\Delta x = 0-(-10) = +10\) m):</p>
+          <div class="eq">$$v_m = \frac{+10}{30} = \tfrac13 \approx 0{,}33\ \mathrm{m/s} \qquad \mathrm{Rap}_m = \frac{50}{30} = \tfrac53 \approx 1{,}67\ \mathrm{m/s}$$</div>
+          <p><b>Ecuación de itinerario del primer tramo</b> (MRU, \(x_0=-10\), \(v=+2\)), válida para \(0 \le t \le 15\):</p>
+          <div class="eq">$$x(t) = -10 + 2t$$</div>
+          <div class="eq">$$x(5) = -10+10 = 0\ \mathrm{m} \qquad x(10) = -10+20 = +10\ \mathrm{m}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">v(4 s) = +2,00 · v(20 s) = −1,67 · v<sub>final</sub> = −1,67 m/s</div>
+            <div class="sub">v<sub>m</sub> ≈ 0,33 m/s · Rap<sub>m</sub> ≈ 1,67 m/s · x(5 s) = 0 m · x(10 s) = +10,00 m</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>x(5) = 0 coincide con el cruce del eje que se ve en el gráfico ✔, y x(15) = −10+30 = 20 m empalma exactamente con el inicio del tramo en reposo ✔.</p></div>
+          <div class="callout warn"><strong>Ojo con "velocidad final"</strong><p>No es cero: el móvil <em>sigue moviéndose</em> en el último instante tabulado (llega a x = 0 con −1,67 m/s). Que la posición final coincida con el origen no significa que se haya detenido.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 181 ===== -->
+    <details class="prob">
+      <summary><span class="num">181</span><span class="enun">La tabla muestra las posiciones de un móvil en línea recta, tomadas cada 2 s con respecto a un punto de referencia; a la derecha de ese punto se considera positivo y a la izquierda negativo. Construya el gráfico y elabore un análisis cualitativo del movimiento. Indique los intervalos de tiempo en que avanzó, tuvo MRU o estuvo con MRUA, si corresponde. Calcule velocidad media y rapidez media.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th></tr><tr><td><b>x (m)</b></td><td>-2</td><td>4</td><td>10</td><td>16</td><td>22</td><td>28</td><td>28</td><td>28</td><td>20</td><td>12</td><td>4</td><td>-4</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="205.5" y1="26" x2="205.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="205.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">5</text>
+<line x1="345.1" y1="26" x2="345.1" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="345.1" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="484.6" y1="26" x2="484.6" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="484.6" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">15</text>
+<line x1="624.2" y1="26" x2="624.2" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="624.2" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="66" y1="241.0" x2="680" y2="241.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="245.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="173.5" x2="680" y2="173.5" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="177.5" font-size="11" fill="#8fa0af" text-anchor="end">10</text>
+<line x1="66" y1="106.0" x2="680" y2="106.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="110.0" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="38.4" x2="680" y2="38.4" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="42.4" font-size="11" fill="#8fa0af" text-anchor="end">30</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,254.6 121.8,214.0 177.6,173.5 233.5,133.0 289.3,92.5 345.1,51.9 400.9,51.9 456.7,51.9 512.5,106.0 568.4,160.0 624.2,214.0 680.0,268.1" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="254.6" r="3.4" fill="#5fd3bc"/>
+<circle cx="121.8" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="177.6" cy="173.5" r="3.4" fill="#5fd3bc"/>
+<circle cx="233.5" cy="133.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="289.3" cy="92.5" r="3.4" fill="#5fd3bc"/>
+<circle cx="345.1" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="400.9" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="456.7" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="512.5" cy="106.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="568.4" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="624.2" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 10 s</td><td>10 s</td><td>+30 m</td><td>\(3\) = 3,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>10 → 14 s</td><td>4 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>14 → 22 s</td><td>8 s</td><td>-32 m</td><td>\(-4\) = -4,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr></table>
+          <div class="callout note"><strong>Respuesta directa a lo que pregunta</strong><p><b>Avanzó</b> (sentido +x): de 0 a 10 s. <b>MRU</b>: en los tres tramos (0→10, 10→14 con v = 0, y 14→22), porque en el gráfico <em>todos</em> son segmentos rectos. <b>MRUA</b>: en ningún intervalo — no hay tramos curvos, así que la aceleración es cero en todo el movimiento (salvo los cambios bruscos idealizados en t = 10 s y t = 14 s).</p></div>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <p>Recorrido: avanza 30 m (de −2 a 28) y retrocede 32 m (de 28 a −4).</p>
+          <div class="eq">$$\text{Recorrido} = 30 + 32 = 62\ \mathrm{m} \qquad \Delta x = -4 - (-2) = -2\ \mathrm{m}$$</div>
+          <div class="eq">$$v_m = \frac{-2}{22} = -\tfrac{1}{11} \approx -0{,}09\ \mathrm{m/s} \qquad \mathrm{Rap}_m = \frac{62}{22} = \tfrac{31}{11} \approx 2{,}82\ \mathrm{m/s}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">v<sub>m</sub> ≈ −0,09 m/s · Rap<sub>m</sub> ≈ 2,82 m/s</div>
+            <div class="sub">avanzó de 0 a 10 s · MRU en todos los tramos · MRUA en ninguno</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout note"><strong>El caso extremo</strong><p>Este problema ilustra por qué <b>velocidad media ≠ rapidez media</b>: el móvil recorrió 62 m pero terminó casi donde empezó (Δx = −2 m). La velocidad media es casi nula (−0,09 m/s) mientras la rapidez media es 31 veces mayor.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 182 ===== -->
+    <details class="prob">
+      <summary><span class="num">182</span><span class="enun">Un móvil se mueve en una línea recta horizontal; sus posiciones con respecto a un observador se indican en la tabla adjunta, con los datos en el SI y considerando positivo hacia la derecha. Construya el gráfico y elabore un análisis cualitativo del movimiento. Calcule su velocidad media, su rapidez media y su posición exacta a los 9 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>4</th><th>8</th><th>12</th><th>16</th><th>20</th><th>24</th><th>28</th><th>32</th><th>36</th><th>40</th></tr><tr><td><b>x (m)</b></td><td>-40</td><td>-20</td><td>0</td><td>20</td><td>40</td><td>20</td><td>0</td><td>-20</td><td>0</td><td>20</td><td>40</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="219.5" y1="26" x2="219.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="219.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="373.0" y1="26" x2="373.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="373.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="526.5" y1="26" x2="526.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="526.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">30</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">40</text>
+<line x1="66" y1="268.1" x2="680" y2="268.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="272.1" font-size="11" fill="#8fa0af" text-anchor="end">-40</text>
+<line x1="66" y1="214.0" x2="680" y2="214.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="218.0" font-size="11" fill="#8fa0af" text-anchor="end">-20</text>
+<line x1="66" y1="160.0" x2="680" y2="160.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="164.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="106.0" x2="680" y2="106.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="110.0" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="51.9" x2="680" y2="51.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="55.9" font-size="11" fill="#8fa0af" text-anchor="end">40</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,268.1 127.4,214.0 188.8,160.0 250.2,106.0 311.6,51.9 373.0,106.0 434.4,160.0 495.8,214.0 557.2,160.0 618.6,106.0 680.0,51.9" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="106.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="106.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="106.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="51.9" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 16 s</td><td>16 s</td><td>+80 m</td><td>\(5\) = 5,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>16 → 28 s</td><td>12 s</td><td>-60 m</td><td>\(-5\) = -5,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>28 → 40 s</td><td>12 s</td><td>+60 m</td><td>\(5\) = 5,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr></table>
+          <p>En palabras: el móvil <b>nunca se detiene</b> y hace un vaivén. Avanza a 5 m/s desde x = −40 hasta x = +40 (0 a 16 s), invierte el sentido y retrocede a la misma rapidez hasta x = −20 (16 a 28 s), y vuelve a invertir avanzando otra vez a 5 m/s hasta x = +40 (28 a 40 s). Los tres tramos tienen la <b>misma rapidez</b> (5 m/s); lo que cambia es el signo.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <div class="eq">$$\text{Recorrido} = 80 + 60 + 60 = 200\ \mathrm{m} \qquad \Delta x = 40 - (-40) = +80\ \mathrm{m}$$</div>
+          <div class="eq">$$v_m = \frac{80}{40} = +2{,}00\ \mathrm{m/s} \qquad \mathrm{Rap}_m = \frac{200}{40} = 5{,}00\ \mathrm{m/s}$$</div>
+          <p><b>Posición a los 9 s</b> — cae en el primer tramo (0 ≤ t ≤ 16), con \(x_0 = -40\) y \(v = +5\):</p>
+          <div class="eq">$$x(t) = -40 + 5t \;\Rightarrow\; x(9) = -40 + 45 = +5{,}00\ \mathrm{m}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">v<sub>m</sub> = +2,00 m/s · Rap<sub>m</sub> = 5,00 m/s · x(9 s) = +5,00 m</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>La rapidez media (5,00) coincide exactamente con la rapidez de cada tramo ✔ — tiene que ser así, porque el móvil se movió todo el tiempo con la misma rapidez. La velocidad media, en cambio, es mucho menor por los cambios de sentido.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 183 ===== -->
+    <details class="prob">
+      <summary><span class="num">183</span><span class="enun">Un móvil se mueve en una línea recta horizontal; sus posiciones con respecto a un observador se indican en la tabla adjunta, con los datos en el SI y considerando positivo hacia la derecha. Construya el gráfico y elabore un análisis cualitativo del movimiento. Calcule su velocidad media, su rapidez media y su posición exacta a los 5 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>3</th><th>6</th><th>9</th><th>12</th><th>15</th><th>18</th><th>21</th><th>24</th><th>27</th><th>30</th></tr><tr><td><b>x (m)</b></td><td>40</td><td>46</td><td>52</td><td>52</td><td>52</td><td>40</td><td>28</td><td>16</td><td>4</td><td>-8</td><td>-20</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="168.3" y1="26" x2="168.3" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="168.3" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">5</text>
+<line x1="270.7" y1="26" x2="270.7" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="270.7" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="373.0" y1="26" x2="373.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="373.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">15</text>
+<line x1="475.3" y1="26" x2="475.3" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="475.3" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="577.7" y1="26" x2="577.7" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="577.7" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">25</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">30</text>
+<line x1="66" y1="268.1" x2="680" y2="268.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="272.1" font-size="11" fill="#8fa0af" text-anchor="end">-20</text>
+<line x1="66" y1="208.0" x2="680" y2="208.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="212.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="148.0" x2="680" y2="148.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="152.0" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="88.0" x2="680" y2="88.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="92.0" font-size="11" fill="#8fa0af" text-anchor="end">40</text>
+<line x1="66" y1="27.9" x2="680" y2="27.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="31.9" font-size="11" fill="#8fa0af" text-anchor="end">60</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,88.0 127.4,69.9 188.8,51.9 250.2,51.9 311.6,51.9 373.0,88.0 434.4,124.0 495.8,160.0 557.2,196.0 618.6,232.0 680.0,268.1" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="69.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="232.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 6 s</td><td>6 s</td><td>+12 m</td><td>\(2\) = 2,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>6 → 12 s</td><td>6 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>12 → 30 s</td><td>18 s</td><td>-72 m</td><td>\(-4\) = -4,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr></table>
+          <p>En palabras: parte 40 m a la derecha del observador, avanza lentamente (2 m/s) hasta x = 52 m, <b>se detiene 6 s</b>, y luego retrocede rápido (4 m/s) cruzando al lado izquierdo del observador, terminando en x = −20 m.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <div class="eq">$$\text{Recorrido} = 12 + 72 = 84\ \mathrm{m} \qquad \Delta x = -20 - 40 = -60\ \mathrm{m}$$</div>
+          <div class="eq">$$v_m = \frac{-60}{30} = -2{,}00\ \mathrm{m/s} \qquad \mathrm{Rap}_m = \frac{84}{30} = 2{,}80\ \mathrm{m/s}$$</div>
+          <p><b>Posición a los 5 s</b> — primer tramo (0 ≤ t ≤ 6), \(x_0 = 40\), \(v = +2\):</p>
+          <div class="eq">$$x(t) = 40 + 2t \;\Rightarrow\; x(5) = 40 + 10 = +50{,}00\ \mathrm{m}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">v<sub>m</sub> = −2,00 m/s · Rap<sub>m</sub> = 2,80 m/s · x(5 s) = +50,00 m</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout note"><strong>Signos</strong><p>El móvil pasa por el observador (x = 0) durante el tercer tramo: \(52 - 4(t-12) = 0 \Rightarrow t = 25\) s, lo que en el gráfico se ve como el cruce del eje horizontal ✔.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 184 ===== -->
+    <details class="prob">
+      <summary><span class="num">184</span><span class="enun">Un móvil se mueve en una línea recta horizontal; sus posiciones con respecto a un observador se indican en la tabla adjunta, con los datos en el SI y considerando positivo hacia la derecha. Construya el gráfico y elabore un análisis cualitativo del movimiento. Calcule velocidad media, rapidez media y posición exacta a los 7 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th></tr><tr><td><b>x (m)</b></td><td>40</td><td>30</td><td>20</td><td>10</td><td>0</td><td>-10</td><td>-20</td><td>-20</td><td>-20</td><td>-20</td><td>-20</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="219.5" y1="26" x2="219.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="219.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">5</text>
+<line x1="373.0" y1="26" x2="373.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="373.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="526.5" y1="26" x2="526.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="526.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">15</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="66" y1="268.1" x2="680" y2="268.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="272.1" font-size="11" fill="#8fa0af" text-anchor="end">-20</text>
+<line x1="66" y1="196.0" x2="680" y2="196.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="200.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="124.0" x2="680" y2="124.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="128.0" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="51.9" x2="680" y2="51.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="55.9" font-size="11" fill="#8fa0af" text-anchor="end">40</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,51.9 127.4,88.0 188.8,124.0 250.2,160.0 311.6,196.0 373.0,232.0 434.4,268.1 495.8,268.1 557.2,268.1 618.6,268.1 680.0,268.1" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="232.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 12 s</td><td>12 s</td><td>-60 m</td><td>\(-5\) = -5,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>12 → 20 s</td><td>8 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr></table>
+          <p>En palabras: el móvil <b>solo retrocede</b> (nunca avanza): va desde 40 m a la derecha del observador hasta 20 m a su izquierda con MRU de 5 m/s, cruzando el origen a los 8 s; a los 12 s <b>se detiene</b> y queda en reposo hasta el final.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <div class="eq">$$\text{Recorrido} = 60\ \mathrm{m} \qquad \Delta x = -20 - 40 = -60\ \mathrm{m}$$</div>
+          <div class="eq">$$v_m = \frac{-60}{20} = -3{,}00\ \mathrm{m/s} \qquad \mathrm{Rap}_m = \frac{60}{20} = 3{,}00\ \mathrm{m/s}$$</div>
+          <p><b>Posición a los 7 s</b> — primer tramo (0 ≤ t ≤ 12), \(x_0 = 40\), \(v = -5\):</p>
+          <div class="eq">$$x(t) = 40 - 5t \;\Rightarrow\; x(7) = 40 - 35 = +5{,}00\ \mathrm{m}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">v<sub>m</sub> = −3,00 m/s · Rap<sub>m</sub> = 3,00 m/s · x(7 s) = +5,00 m</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>Acá \(|v_m| = \mathrm{Rap}_m\) exactamente ✔: pasa <em>solo</em> cuando el móvil nunca cambia de sentido, que es justo este caso. Si te dan distintos y no hubo retroceso, hay un error de cuentas.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 185 ===== -->
+    <details class="prob">
+      <summary><span class="num">185</span><span class="enun">La tabla muestra datos de posición en el SI para un móvil que se mueve en una línea recta horizontal; considere hacia la derecha positivo y hacia la izquierda negativo. Interprete cualitativamente el movimiento. Calcule rapidez media y velocidad media. Calcule posición y velocidad exacta a los 27 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>5</th><th>10</th><th>15</th><th>20</th><th>25</th><th>30</th><th>35</th><th>40</th><th>45</th><th>50</th></tr><tr><td><b>x (m)</b></td><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td><td>28</td><td>28</td><td>20</td><td>12</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="188.8" y1="26" x2="188.8" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="188.8" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="311.6" y1="26" x2="311.6" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="311.6" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="434.4" y1="26" x2="434.4" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="434.4" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">30</text>
+<line x1="557.2" y1="26" x2="557.2" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="557.2" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">40</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">50</text>
+<line x1="66" y1="259.1" x2="680" y2="259.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="263.1" font-size="11" fill="#8fa0af" text-anchor="end">5</text>
+<line x1="66" y1="214.0" x2="680" y2="214.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="218.0" font-size="11" fill="#8fa0af" text-anchor="end">10</text>
+<line x1="66" y1="169.0" x2="680" y2="169.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="173.0" font-size="11" fill="#8fa0af" text-anchor="end">15</text>
+<line x1="66" y1="124.0" x2="680" y2="124.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="128.0" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="79.0" x2="680" y2="79.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="83.0" font-size="11" fill="#8fa0af" text-anchor="end">25</text>
+<line x1="66" y1="33.9" x2="680" y2="33.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="37.9" font-size="11" fill="#8fa0af" text-anchor="end">30</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,268.1 127.4,232.0 188.8,196.0 250.2,160.0 311.6,124.0 373.0,88.0 434.4,51.9 495.8,51.9 557.2,51.9 618.6,124.0 680.0,196.0" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="232.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="196.0" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 30 s</td><td>30 s</td><td>+24 m</td><td>\(\tfrac{4}{5}\) = 0,80 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>30 → 40 s</td><td>10 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>40 → 50 s</td><td>10 s</td><td>-16 m</td><td>\(-\tfrac{8}{5}\) = -1,60 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr></table>
+          <p>En palabras: el móvil parte 4 m a la derecha del origen y avanza <b>lentamente</b> (0,8 m/s) durante 30 s; <b>se detiene 10 s</b> en x = 28 m; luego retrocede al <b>doble</b> de rapidez (1,6 m/s) hasta x = 12 m. Nunca cruza al lado negativo.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <div class="eq">$$\text{Recorrido} = 24 + 16 = 40\ \mathrm{m} \qquad \Delta x = 12 - 4 = +8\ \mathrm{m}$$</div>
+          <div class="eq">$$\mathrm{Rap}_m = \frac{40}{50} = 0{,}80\ \mathrm{m/s} \qquad v_m = \frac{+8}{50} = 0{,}16\ \mathrm{m/s}$$</div>
+          <p><b>A los 27 s</b> — cae en el primer tramo (0 ≤ t ≤ 30), con \(x_0 = 4\) y \(v = \tfrac45\):</p>
+          <div class="eq">$$x(t) = 4 + \tfrac45 t \;\Rightarrow\; x(27) = 4 + \tfrac{108}{5} = \tfrac{128}{5} = 25{,}60\ \mathrm{m}$$</div>
+          <div class="eq">$$v(27) = +0{,}80\ \mathrm{m/s} \quad (\text{constante en ese tramo})$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">Rap<sub>m</sub> = 0,80 m/s · v<sub>m</sub> = 0,16 m/s</div>
+            <div class="sub">x(27 s) = 25,60 m · v(27 s) = +0,80 m/s</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>Curiosidad: la rapidez media total (0,80) coincide con la rapidez del primer tramo, pero por casualidad numérica — el reposo baja el promedio justo lo que el tramo rápido lo sube. Verificación: \(x(30) = 4 + 24 = 28\) ✔ empalma con la tabla.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 186 ===== -->
+    <details class="prob">
+      <summary><span class="num">186</span><span class="enun">Un móvil se mueve en una línea recta horizontal; sus posiciones con respecto a un observador se indican en la tabla adjunta, con los datos en el SI y considerando positivo hacia la derecha. Construya el gráfico y elabore un análisis cualitativo del movimiento. Calcule su velocidad media, su rapidez media y su posición exacta a los 32 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>10</th><th>20</th><th>30</th><th>40</th><th>50</th><th>60</th><th>70</th><th>80</th><th>90</th><th>100</th></tr><tr><td><b>x (m)</b></td><td>50</td><td>30</td><td>10</td><td>-10</td><td>-30</td><td>-30</td><td>-30</td><td>-40</td><td>-50</td><td>-60</td><td>-70</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="188.8" y1="26" x2="188.8" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="188.8" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="311.6" y1="26" x2="311.6" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="311.6" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">40</text>
+<line x1="434.4" y1="26" x2="434.4" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="434.4" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">60</text>
+<line x1="557.2" y1="26" x2="557.2" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="557.2" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">80</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">100</text>
+<line x1="66" y1="277.1" x2="680" y2="277.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="281.1" font-size="11" fill="#8fa0af" text-anchor="end">-75</text>
+<line x1="66" y1="232.0" x2="680" y2="232.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="236.0" font-size="11" fill="#8fa0af" text-anchor="end">-50</text>
+<line x1="66" y1="187.0" x2="680" y2="187.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="191.0" font-size="11" fill="#8fa0af" text-anchor="end">-25</text>
+<line x1="66" y1="142.0" x2="680" y2="142.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="146.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="97.0" x2="680" y2="97.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="101.0" font-size="11" fill="#8fa0af" text-anchor="end">25</text>
+<line x1="66" y1="51.9" x2="680" y2="51.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="55.9" font-size="11" fill="#8fa0af" text-anchor="end">50</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,51.9 127.4,88.0 188.8,124.0 250.2,160.0 311.6,196.0 373.0,196.0 434.4,196.0 495.8,214.0 557.2,232.0 618.6,250.1 680.0,268.1" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="232.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="250.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 40 s</td><td>40 s</td><td>-80 m</td><td>\(-2\) = -2,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>40 → 60 s</td><td>20 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>60 → 100 s</td><td>40 s</td><td>-40 m</td><td>\(-1\) = -1,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr></table>
+          <p>En palabras: el móvil <b>siempre retrocede</b> (o está detenido), nunca avanza. Va desde 50 m a la derecha hasta −30 m con MRU de 2 m/s, cruzando el origen a los 25 s; <b>se detiene 20 s</b>; luego sigue retrocediendo, pero <b>más lento</b> (1 m/s), hasta x = −70 m.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <div class="eq">$$\text{Recorrido} = 80 + 40 = 120\ \mathrm{m} \qquad \Delta x = -70 - 50 = -120\ \mathrm{m}$$</div>
+          <div class="eq">$$v_m = \frac{-120}{100} = -1{,}20\ \mathrm{m/s} \qquad \mathrm{Rap}_m = \frac{120}{100} = 1{,}20\ \mathrm{m/s}$$</div>
+          <p><b>Posición a los 32 s</b> — primer tramo (0 ≤ t ≤ 40), \(x_0 = 50\), \(v = -2\):</p>
+          <div class="eq">$$x(t) = 50 - 2t \;\Rightarrow\; x(32) = 50 - 64 = -14{,}00\ \mathrm{m}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">v<sub>m</sub> = −1,20 m/s · Rap<sub>m</sub> = 1,20 m/s · x(32 s) = −14,00 m</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>Como no hay cambio de sentido, \(|v_m| = \mathrm{Rap}_m = 1{,}20\) ✔. El signo negativo de x(32) es coherente: a los 25 s ya había cruzado al lado izquierdo del observador.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 187 ===== -->
+    <details class="prob">
+      <summary><span class="num">187</span><span class="enun">Un móvil se mueve en una línea recta; sus posiciones con respecto a un observador se indican en la tabla adjunta, con los datos en el SI. Construya el gráfico x vs. t. ¿Cuánto tiempo se movió y cuánto tiempo estuvo detenido, si lo hace? ¿Cuántos m se desplazó, si lo hace? ¿Cuántos m recorrió, si lo hace? Calcule su rapidez media.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th></tr><tr><td><b>x (m)</b></td><td>-10</td><td>-6</td><td>-2</td><td>2</td><td>6</td><td>10</td><td>10</td><td>5</td><td>0</td><td>-5</td><td>-5</td><td>-5</td><td>-3</td><td>-1</td><td>1</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="175.6" y1="26" x2="175.6" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="175.6" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">2,5</text>
+<line x1="285.3" y1="26" x2="285.3" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="285.3" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">5</text>
+<line x1="394.9" y1="26" x2="394.9" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="394.9" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">7,5</text>
+<line x1="504.6" y1="26" x2="504.6" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="504.6" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="614.2" y1="26" x2="614.2" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="614.2" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">12,5</text>
+<line x1="66" y1="268.1" x2="680" y2="268.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="272.1" font-size="11" fill="#8fa0af" text-anchor="end">-10</text>
+<line x1="66" y1="214.0" x2="680" y2="214.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="218.0" font-size="11" fill="#8fa0af" text-anchor="end">-5</text>
+<line x1="66" y1="160.0" x2="680" y2="160.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="164.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="106.0" x2="680" y2="106.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="110.0" font-size="11" fill="#8fa0af" text-anchor="end">5</text>
+<line x1="66" y1="51.9" x2="680" y2="51.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="55.9" font-size="11" fill="#8fa0af" text-anchor="end">10</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,268.1 109.9,224.8 153.7,181.6 197.6,138.4 241.4,95.2 285.3,51.9 329.1,51.9 373.0,106.0 416.9,160.0 460.7,214.0 504.6,214.0 548.4,214.0 592.3,192.4 636.1,170.8 680.0,149.2" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="109.9" cy="224.8" r="3.4" fill="#5fd3bc"/>
+<circle cx="153.7" cy="181.6" r="3.4" fill="#5fd3bc"/>
+<circle cx="197.6" cy="138.4" r="3.4" fill="#5fd3bc"/>
+<circle cx="241.4" cy="95.2" r="3.4" fill="#5fd3bc"/>
+<circle cx="285.3" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="329.1" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="106.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="416.9" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="460.7" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="504.6" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="548.4" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="592.3" cy="192.4" r="3.4" fill="#5fd3bc"/>
+<circle cx="636.1" cy="170.8" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="149.2" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 5 s</td><td>5 s</td><td>+20 m</td><td>\(4\) = 4,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>5 → 6 s</td><td>1 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>6 → 9 s</td><td>3 s</td><td>-15 m</td><td>\(-5\) = -5,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>9 → 11 s</td><td>2 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>11 → 14 s</td><td>3 s</td><td>+6 m</td><td>\(2\) = 2,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr></table>
+          <p>En palabras: cinco tramos. Avanza rápido (4 m/s) cruzando el origen a los 2,5 s; <b>se detiene 1 s</b> en x = 10; retrocede aún más rápido (5 m/s) hasta x = −5; <b>se detiene 2 s</b>; y finalmente vuelve a avanzar (2 m/s) terminando en x = +1 m.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <p><b>Tiempos</b> — sumo los tramos según si la pendiente es cero o no:</p>
+          <div class="eq">$$t_{\text{movimiento}} = \underbrace{5}_{0\to5} + \underbrace{3}_{6\to9} + \underbrace{3}_{11\to14} = 11\ \mathrm{s}$$</div>
+          <div class="eq">$$t_{\text{detenido}} = \underbrace{1}_{5\to6} + \underbrace{2}_{9\to11} = 3\ \mathrm{s} \qquad (11 + 3 = 14\ \text{s totales})$$ <span class="ok-inline">✔</span></div>
+          <p><b>Desplazamiento y recorrido</b> — el desplazamiento usa solo inicio y fin; el recorrido suma los valores absolutos tramo a tramo:</p>
+          <div class="eq">$$\Delta x = 1 - (-10) = +11\ \mathrm{m}$$</div>
+          <div class="eq">$$\text{Recorrido} = |10-(-10)| + |{-5}-10| + |1-(-5)| = 20 + 15 + 6 = 41\ \mathrm{m}$$</div>
+          <div class="eq">$$\mathrm{Rap}_m = \frac{41}{14} \approx 2{,}93\ \mathrm{m/s}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">se movió 11 s · detenido 3 s · Δx = +11 m · recorrido 41 m</div>
+            <div class="sub">Rap<sub>m</sub> ≈ 2,93 m/s (velocidad media: 11/14 ≈ 0,79 m/s)</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>Recorrido (41) &gt; |Δx| (11) ✔ por los dos cambios de sentido. Nota que el móvil termina a la derecha del origen habiendo partido a la izquierda: por eso Δx es positivo pese a que el tramo más largo fue de retroceso.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 188 ===== -->
+    <details class="prob">
+      <summary><span class="num">188</span><span class="enun">La siguiente tabla muestra la posición de dos móviles A y B sobre una línea recta, con respecto a un punto de referencia; a la derecha se considera (+) y a la izquierda (−). Represente en un mismo gráfico posición / tiempo (x vs. t) ambos movimientos y descríbalos cualitativamente. Calcule rapidez media y velocidad media de ambos, y el instante(s) de tiempo, si existe(n), en que están en la misma posición.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr><tr><td><b>x<sub>A</sub> (m)</b></td><td>40</td><td>30</td><td>20</td><td>10</td><td>0</td><td>-10</td><td>-20</td><td>-20</td><td>-20</td><td>-20</td><td>-20</td></tr><tr><td><b>x<sub>B</sub> (m)</b></td><td>-10</td><td>-2</td><td>6</td><td>14</td><td>22</td><td>30</td><td>30</td><td>15</td><td>0</td><td>0</td><td>0</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="188.8" y1="26" x2="188.8" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="188.8" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">2</text>
+<line x1="311.6" y1="26" x2="311.6" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="311.6" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">4</text>
+<line x1="434.4" y1="26" x2="434.4" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="434.4" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">6</text>
+<line x1="557.2" y1="26" x2="557.2" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="557.2" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">8</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="66" y1="268.1" x2="680" y2="268.1" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="272.1" font-size="11" fill="#8fa0af" text-anchor="end">-20</text>
+<line x1="66" y1="196.0" x2="680" y2="196.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="200.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="124.0" x2="680" y2="124.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="128.0" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="51.9" x2="680" y2="51.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="55.9" font-size="11" fill="#8fa0af" text-anchor="end">40</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,51.9 127.4,88.0 188.8,124.0 250.2,160.0 311.6,196.0 373.0,232.0 434.4,268.1 495.8,268.1 557.2,268.1 618.6,268.1 680.0,268.1" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="88.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="124.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="196.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="232.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<polyline points="66.0,232.0 127.4,203.2 188.8,174.4 250.2,145.6 311.6,116.8 373.0,88.0 434.4,88.0 495.8,142.0 557.2,196.0 618.6,196.0 680.0,196.0" fill="none" stroke="#ffb347" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="232.0" r="3.4" fill="#ffb347"/>
+<circle cx="127.4" cy="203.2" r="3.4" fill="#ffb347"/>
+<circle cx="188.8" cy="174.4" r="3.4" fill="#ffb347"/>
+<circle cx="250.2" cy="145.6" r="3.4" fill="#ffb347"/>
+<circle cx="311.6" cy="116.8" r="3.4" fill="#ffb347"/>
+<circle cx="373.0" cy="88.0" r="3.4" fill="#ffb347"/>
+<circle cx="434.4" cy="88.0" r="3.4" fill="#ffb347"/>
+<circle cx="495.8" cy="142.0" r="3.4" fill="#ffb347"/>
+<circle cx="557.2" cy="196.0" r="3.4" fill="#ffb347"/>
+<circle cx="618.6" cy="196.0" r="3.4" fill="#ffb347"/>
+<circle cx="680.0" cy="196.0" r="3.4" fill="#ffb347"/>
+<line x1="236.6" y1="26" x2="236.6" y2="294" stroke="#dbe4ec" stroke-width="1.2" stroke-dasharray="5 4" opacity=".7"/>
+<circle cx="236.6" cy="152.0" r="6" fill="none" stroke="#dbe4ec" stroke-width="2"/>
+<text x="244.6" y="142.0" font-size="12" fill="#dbe4ec">cruce: t = 25/9 s</text>
+<line x1="530" y1="40" x2="552" y2="40" stroke="#5fd3bc" stroke-width="3"/>
+<text x="558" y="44" font-size="12" fill="#5fd3bc">Móvil A</text>
+<line x1="530" y1="58" x2="552" y2="58" stroke="#ffb347" stroke-width="3"/>
+<text x="558" y="62" font-size="12" fill="#ffb347">Móvil B</text>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p><b>Móvil A</b> — parte a la derecha y solo retrocede:</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 6 s</td><td>6 s</td><td>-60 m</td><td>\(-10\) = -10,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>6 → 10 s</td><td>4 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr></table>
+          <p><b>Móvil B</b> — parte a la izquierda, avanza, se detiene y vuelve al origen:</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 5 s</td><td>5 s</td><td>+40 m</td><td>\(8\) = 8,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>5 → 6 s</td><td>1 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>6 → 8 s</td><td>2 s</td><td>-30 m</td><td>\(-15\) = -15,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>8 → 10 s</td><td>2 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr></table>
+          <p>Se mueven <b>en sentidos opuestos</b> durante los primeros 5 s: A baja, B sube. Por eso sus curvas se cruzan una sola vez, y ese cruce es el instante en que ocupan la misma posición.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <p><b>Promedios del móvil A</b> (recorrido 60 m, \(\Delta x = -60\) m, T = 10 s):</p>
+          <div class="eq">$$v_{m,A} = \frac{-60}{10} = -6{,}00\ \mathrm{m/s} \qquad \mathrm{Rap}_{m,A} = \frac{60}{10} = 6{,}00\ \mathrm{m/s}$$</div>
+          <p><b>Promedios del móvil B</b> (recorrido 40 + 30 = 70 m, \(\Delta x = 0-(-10) = +10\) m):</p>
+          <div class="eq">$$v_{m,B} = \frac{+10}{10} = +1{,}00\ \mathrm{m/s} \qquad \mathrm{Rap}_{m,B} = \frac{70}{10} = 7{,}00\ \mathrm{m/s}$$</div>
+          <p><b>Instante de igual posición.</b> El cruce ocurre en el primer tramo de ambos (0 ≤ t ≤ 5), donde:</p>
+          <div class="eq">$$x_A(t) = 40 - 10t \qquad x_B(t) = -10 + 8t$$</div>
+          <div class="eq">$$40 - 10t = -10 + 8t \;\Rightarrow\; 50 = 18t \;\Rightarrow\; t = \tfrac{25}{9} \approx 2{,}78\ \mathrm{s}$$</div>
+          <div class="eq">$$x = 40 - 10\left(\tfrac{25}{9}\right) = \tfrac{110}{9} \approx 12{,}22\ \mathrm{m}$$</div>
+          <p>En los tramos posteriores no hay más soluciones: para \(t \ge 6\), A está fijo en −20 m y B nunca baja de 0 m.</p>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">A: v<sub>m</sub> = −6,00 · Rap<sub>m</sub> = 6,00 m/s &nbsp;|&nbsp; B: v<sub>m</sub> = +1,00 · Rap<sub>m</sub> = 7,00 m/s</div>
+            <div class="sub">Misma posición en un único instante: t = 25/9 ≈ 2,78 s, en x ≈ 12,22 m</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>En t = 25/9: \(x_B = -10 + 8(25/9) = -10 + 200/9 = 110/9\) ✔ coincide con \(x_A\). Y el valor cae dentro de [0, 5] s, que es donde ambas ecuaciones son válidas ✔.</p></div>
+          <div class="callout warn"><strong>Error típico</strong><p>Usar las ecuaciones del primer tramo fuera de su rango. Cada tramo tiene <b>su propia</b> ecuación con su propio intervalo de validez: hay que verificar que la solución caiga dentro, si no, se descarta.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 189 ===== -->
+    <details class="prob">
+      <summary><span class="num">189</span><span class="enun">Los siguientes datos están tomados del movimiento de dos ciclistas en una recta horizontal. Describa cualitativamente el movimiento del ciclista A. Calcule rapidez media y velocidad media de cada ciclista. A los 35 s, ¿cuál tiene mayor velocidad? ¿cuál tiene mayor rapidez? Calcule en forma analítica el instante exacto en que se encuentran.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>4</th><th>8</th><th>12</th><th>16</th><th>20</th><th>24</th><th>28</th><th>32</th><th>36</th><th>40</th></tr><tr><td><b>x<sub>A</sub> (m)</b></td><td>0</td><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>30</td><td>30</td><td>26</td><td>22</td><td>18</td></tr><tr><td><b>x<sub>B</sub> (m)</b></td><td>40</td><td>35</td><td>30</td><td>25</td><td>20</td><td>15</td><td>10</td><td>5</td><td>0</td><td>-5</td><td>-10</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="219.5" y1="26" x2="219.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="219.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="373.0" y1="26" x2="373.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="373.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="526.5" y1="26" x2="526.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="526.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">30</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">40</text>
+<line x1="66" y1="224.8" x2="680" y2="224.8" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="228.8" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="138.4" x2="680" y2="138.4" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="142.4" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="51.9" x2="680" y2="51.9" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="55.9" font-size="11" fill="#8fa0af" text-anchor="end">40</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,224.8 127.4,198.9 188.8,173.0 250.2,147.0 311.6,121.1 373.0,95.2 434.4,95.2 495.8,95.2 557.2,112.5 618.6,129.7 680.0,147.0" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="224.8" r="3.4" fill="#5fd3bc"/>
+<circle cx="127.4" cy="198.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="188.8" cy="173.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="250.2" cy="147.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="311.6" cy="121.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="95.2" r="3.4" fill="#5fd3bc"/>
+<circle cx="434.4" cy="95.2" r="3.4" fill="#5fd3bc"/>
+<circle cx="495.8" cy="95.2" r="3.4" fill="#5fd3bc"/>
+<circle cx="557.2" cy="112.5" r="3.4" fill="#5fd3bc"/>
+<circle cx="618.6" cy="129.7" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="147.0" r="3.4" fill="#5fd3bc"/>
+<polyline points="66.0,51.9 127.4,73.5 188.8,95.2 250.2,116.8 311.6,138.4 373.0,160.0 434.4,181.6 495.8,203.2 557.2,224.8 618.6,246.5 680.0,268.1" fill="none" stroke="#ffb347" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="51.9" r="3.4" fill="#ffb347"/>
+<circle cx="127.4" cy="73.5" r="3.4" fill="#ffb347"/>
+<circle cx="188.8" cy="95.2" r="3.4" fill="#ffb347"/>
+<circle cx="250.2" cy="116.8" r="3.4" fill="#ffb347"/>
+<circle cx="311.6" cy="138.4" r="3.4" fill="#ffb347"/>
+<circle cx="373.0" cy="160.0" r="3.4" fill="#ffb347"/>
+<circle cx="434.4" cy="181.6" r="3.4" fill="#ffb347"/>
+<circle cx="495.8" cy="203.2" r="3.4" fill="#ffb347"/>
+<circle cx="557.2" cy="224.8" r="3.4" fill="#ffb347"/>
+<circle cx="618.6" cy="246.5" r="3.4" fill="#ffb347"/>
+<circle cx="680.0" cy="268.1" r="3.4" fill="#ffb347"/>
+<line x1="289.3" y1="26" x2="289.3" y2="294" stroke="#dbe4ec" stroke-width="1.2" stroke-dasharray="5 4" opacity=".7"/>
+<circle cx="289.3" cy="130.5" r="6" fill="none" stroke="#dbe4ec" stroke-width="2"/>
+<text x="297.3" y="120.5" font-size="12" fill="#dbe4ec">encuentro: t = 160/11 s</text>
+<line x1="530" y1="40" x2="552" y2="40" stroke="#5fd3bc" stroke-width="3"/>
+<text x="558" y="44" font-size="12" fill="#5fd3bc">Ciclista A</text>
+<line x1="530" y1="58" x2="552" y2="58" stroke="#ffb347" stroke-width="3"/>
+<text x="558" y="62" font-size="12" fill="#ffb347">Ciclista B</text>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p><b>Ciclista A</b> (lo que pide el enunciado describir):</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 20 s</td><td>20 s</td><td>+30 m</td><td>\(\tfrac{3}{2}\) = 1,50 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr><tr><td>20 → 28 s</td><td>8 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>28 → 40 s</td><td>12 s</td><td>-12 m</td><td>\(-1\) = -1,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr></table>
+          <p>En palabras: A parte del punto de referencia y <b>avanza</b> con MRU a 1,5 m/s durante 20 s; <b>descansa 8 s</b> detenido en x = 30 m; luego <b>se devuelve</b> con MRU más lento (1 m/s), terminando en x = 18 m.</p>
+          <p><b>Ciclista B</b> — un solo tramo:</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 40 s</td><td>40 s</td><td>-50 m</td><td>\(-\tfrac{5}{4}\) = -1,25 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr></table>
+          <p>B hace <b>MRU puro</b> durante los 40 s: retrocede sin pausa a 1,25 m/s, cruzando el punto de referencia a los 32 s.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <p><b>Promedios de A</b> (recorrido 30 + 12 = 42 m, \(\Delta x = +18\) m):</p>
+          <div class="eq">$$v_{m,A} = \frac{+18}{40} = 0{,}45\ \mathrm{m/s} \qquad \mathrm{Rap}_{m,A} = \frac{42}{40} = 1{,}05\ \mathrm{m/s}$$</div>
+          <p><b>Promedios de B</b> (recorrido 50 m, \(\Delta x = -50\) m):</p>
+          <div class="eq">$$v_{m,B} = \frac{-50}{40} = -1{,}25\ \mathrm{m/s} \qquad \mathrm{Rap}_{m,B} = \frac{50}{40} = 1{,}25\ \mathrm{m/s}$$</div>
+          <p><b>A los 35 s</b> — A está en su tercer tramo y B sigue en el único suyo:</p>
+          <div class="eq">$$v_A(35) = -1{,}00\ \mathrm{m/s} \qquad v_B(35) = -1{,}25\ \mathrm{m/s}$$</div>
+          <div class="callout note"><strong>La sutileza de la pregunta</strong>
+            <p><b>Mayor velocidad: A</b>, porque \(-1{,}00 > -1{,}25\) (comparación <em>algebraica</em>, con signo). <b>Mayor rapidez: B</b>, porque \(|{-1{,}25}| > |{-1{,}00}|\) (comparación de <em>módulos</em>). Ambos van hacia −x, pero B lo hace más rápido.</p></div>
+          <p><b>Encuentro analítico.</b> Ocurre mientras A está en su primer tramo (0 ≤ t ≤ 20):</p>
+          <div class="eq">$$x_A(t) = \tfrac32 t \qquad x_B(t) = 40 - \tfrac54 t$$</div>
+          <div class="eq">$$\tfrac32 t = 40 - \tfrac54 t \;\Rightarrow\; \left(\tfrac32 + \tfrac54\right)t = 40 \;\Rightarrow\; \tfrac{11}{4}t = 40 \;\Rightarrow\; t = \tfrac{160}{11} \approx 14{,}55\ \mathrm{s}$$</div>
+          <div class="eq">$$x = \tfrac32\cdot\tfrac{160}{11} = \tfrac{240}{11} \approx 21{,}82\ \mathrm{m}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">Encuentro en t = 160/11 ≈ 14,55 s, en x ≈ 21,82 m</div>
+            <div class="sub">A: v<sub>m</sub> = 0,45 · Rap<sub>m</sub> = 1,05 m/s &nbsp;|&nbsp; B: v<sub>m</sub> = −1,25 · Rap<sub>m</sub> = 1,25 m/s &nbsp;|&nbsp; a los 35 s: mayor velocidad A, mayor rapidez B</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>\(x_B(160/11) = 40 - \tfrac54\cdot\tfrac{160}{11} = 40 - \tfrac{200}{11} = \tfrac{240}{11}\) ✔ idéntico a \(x_A\). Además 14,55 s cae dentro de [0, 20] ✔, y en el gráfico el cruce se ve justo antes de que A se detenga.</p></div>
+          <div class="callout note"><strong>Único encuentro</strong><p>Después no vuelven a coincidir: cuando A se detiene en 30 m, B ya va bajando por debajo de 22 m, y en el último tramo ambos se alejan (A baja despacio, B baja más rápido).</p></div>
+        </div>
+      </div>
+    </details>
+
+    <!-- ===== 190 ===== -->
+    <details class="prob">
+      <summary><span class="num">190</span><span class="enun">La tabla muestra los datos de x vs. t para un móvil en línea recta, en el SI. Elabore la gráfica y describa cualitativamente el movimiento. Calcule su velocidad media y su rapidez media. Calcule su posición exacta a los 18 s.</span></summary>
+      <div class="cuerpo">
+        <div class="paso"><span class="p-tag">01 · Datos de la tabla</span>
+          
+          <div class="tabla-wrap"><table class="vars datos"><tr><th>t (s)</th><th>0</th><th>5</th><th>10</th><th>15</th><th>20</th><th>25</th><th>30</th><th>35</th><th>40</th></tr><tr><td><b>x (m)</b></td><td>30</td><td>10</td><td>-10</td><td>-30</td><td>-50</td><td>-50</td><td>-50</td><td>-40</td><td>-30</td></tr></table></div>
+        </div>
+        <div class="paso"><span class="p-tag">02 · Gráfico posición vs tiempo</span>
+          <div class="signline"><svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg">
+<line x1="66.0" y1="26" x2="66.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="66.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">0</text>
+<line x1="219.5" y1="26" x2="219.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="219.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">10</text>
+<line x1="373.0" y1="26" x2="373.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="373.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">20</text>
+<line x1="526.5" y1="26" x2="526.5" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="526.5" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">30</text>
+<line x1="680.0" y1="26" x2="680.0" y2="294" stroke="#222c35" stroke-width="1"/>
+<text x="680.0" y="312" font-size="11" fill="#8fa0af" text-anchor="middle">40</text>
+<line x1="66" y1="241.0" x2="680" y2="241.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="245.0" font-size="11" fill="#8fa0af" text-anchor="end">-40</text>
+<line x1="66" y1="187.0" x2="680" y2="187.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="191.0" font-size="11" fill="#8fa0af" text-anchor="end">-20</text>
+<line x1="66" y1="133.0" x2="680" y2="133.0" stroke="#4a5a68" stroke-width="2"/>
+<text x="58" y="137.0" font-size="11" fill="#8fa0af" text-anchor="end">0</text>
+<line x1="66" y1="79.0" x2="680" y2="79.0" stroke="#222c35" stroke-width="1"/>
+<text x="58" y="83.0" font-size="11" fill="#8fa0af" text-anchor="end">20</text>
+<line x1="66" y1="18" x2="66" y2="294" stroke="#8fa0af" stroke-width="2"/>
+<text x="686" y="326" font-size="13" fill="#8fa0af" text-anchor="end">t (s)</text>
+<text x="58" y="14" font-size="13" fill="#8fa0af" text-anchor="end">x (m)</text>
+<polyline points="66.0,51.9 142.8,106.0 219.5,160.0 296.2,214.0 373.0,268.1 449.8,268.1 526.5,268.1 603.2,241.0 680.0,214.0" fill="none" stroke="#5fd3bc" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="66.0" cy="51.9" r="3.4" fill="#5fd3bc"/>
+<circle cx="142.8" cy="106.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="219.5" cy="160.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="296.2" cy="214.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="373.0" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="449.8" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="526.5" cy="268.1" r="3.4" fill="#5fd3bc"/>
+<circle cx="603.2" cy="241.0" r="3.4" fill="#5fd3bc"/>
+<circle cx="680.0" cy="214.0" r="3.4" fill="#5fd3bc"/>
+</svg></div>
+        </div>
+        <div class="paso"><span class="p-tag">03 · Análisis cualitativo por tramos</span>
+          <p>Entre datos consecutivos calculo la pendiente \(v=\Delta x/\Delta t\) y agrupo los que dan el mismo valor: cada grupo es un tramo de movimiento uniforme.</p>
+          <table class="vars"><tr><th>Tramo</th><th>Δt</th><th>Δx</th><th>v = Δx/Δt</th><th>Interpretación</th></tr><tr><td>0 → 20 s</td><td>20 s</td><td>-80 m</td><td>\(-4\) = -4,00 m/s</td><td><b>retrocede</b> hacia −x con <b>MRU</b></td></tr><tr><td>20 → 30 s</td><td>10 s</td><td>+0 m</td><td>\(0\) = 0,00 m/s</td><td>en <b>reposo</b> (recta horizontal)</td></tr><tr><td>30 → 40 s</td><td>10 s</td><td>+20 m</td><td>\(2\) = 2,00 m/s</td><td><b>avanza</b> hacia +x con <b>MRU</b></td></tr></table>
+          <p>En palabras: parte 30 m a la derecha y retrocede rápido (4 m/s), cruzando el origen a los 7,5 s y llegando a x = −50 m; <b>se detiene 10 s</b>; y luego <b>invierte el sentido</b> avanzando a 2 m/s hasta x = −30 m, sin alcanzar a volver al origen.</p>
+        </div>
+        <div class="paso p4"><span class="p-tag">04 · Cálculos</span>
+          <div class="eq">$$\text{Recorrido} = 80 + 20 = 100\ \mathrm{m} \qquad \Delta x = -30 - 30 = -60\ \mathrm{m}$$</div>
+          <div class="eq">$$v_m = \frac{-60}{40} = -1{,}50\ \mathrm{m/s} \qquad \mathrm{Rap}_m = \frac{100}{40} = 2{,}50\ \mathrm{m/s}$$</div>
+          <p><b>Posición a los 18 s</b> — primer tramo (0 ≤ t ≤ 20), \(x_0 = 30\), \(v = -4\):</p>
+          <div class="eq">$$x(t) = 30 - 4t \;\Rightarrow\; x(18) = 30 - 72 = -42{,}00\ \mathrm{m}$$</div>
+          <div class="final-box">
+            <div class="label">Resultados</div>
+            <div class="value">v<sub>m</sub> = −1,50 m/s · Rap<sub>m</sub> = 2,50 m/s · x(18 s) = −42,00 m</div>
+          </div>
+        </div>
+        <div class="paso"><span class="p-tag">05 · Comprobación</span>
+          <div class="callout ok"><strong>Chequeo</strong><p>\(x(20) = 30 - 80 = -50\) ✔ empalma con el inicio del reposo. Y recorrido (100) &gt; |Δx| (60) ✔ por el cambio de sentido del último tramo.</p></div>
+        </div>
+      </div>
+    </details>
+
     <div class="pendiente">
-      <b>Próximas tandas.</b> Este archivo está diseñado para crecer: ya están resueltos los problemas <b>132–178</b>. Faltan por incorporar: <b>179–249</b> (análisis gráfico) con sus teóricas i–xv, <b>250–332</b> (movimiento vertical) con sus teóricas i–vi, y <b>333–385</b> (MCU) con sus teóricas i–xi. Pídeme "continúa con la siguiente tanda" y sigo con el mismo formato p1→p4.
+      <b>Próximas tandas.</b> Este archivo está diseñado para crecer: ya están resueltos los problemas <b>132–178</b> (MRU/MRUA) y <b>179–190</b> (análisis gráfico). Faltan: <b>191–249</b> (resto del análisis gráfico) con sus teóricas i–xv, <b>250–332</b> (movimiento vertical) con sus teóricas i–vi, y <b>333–385</b> (MCU) con sus teóricas i–xi. Pídeme "continúa" y sigo con el mismo formato.
     </div>
 
   </div>
